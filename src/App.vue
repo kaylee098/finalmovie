@@ -29,8 +29,10 @@ export default {
   },
   mounted(){
     axios
-    .get("https://api.themoviedb.org/3/movie/upcoming?api_key=70ef7c62eee1244489c96681175a2a0f&language=en-US&page=1")
+    // API Call for now playing movies
+    .get("https://api.themoviedb.org/3/movie/now_playing?api_key=70ef7c62eee1244489c96681175a2a0f&language=en-US&page=1")
     .then((response) => {
+      // determines how many movie cards there are, currently there are four
       this.tvshows = response.data.results.slice(0,4);
     })
   }
