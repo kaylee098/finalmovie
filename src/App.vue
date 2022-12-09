@@ -1,11 +1,16 @@
+<!-- Kaylee Martin -->
+<!-- Due: 12/12/2022 -->
+<!-- TMDB Final Project using Vue, Axios, Bootstrap -->
+
+<!-- template for overall page, main page -->
 <template>
   <div id="app">
-    
+    <!-- navbar implementation -- on navbar.vue -->
     <NavBar></NavBar>
+    <!-- card component setup -->
     <div class="row row-cols-1 row-cols-md-2 g-4">
         <CardComponent class="col"  v-for="show in tvshows" v-bind:key="show.id" :movie="show"></CardComponent>
     </div>
-  
   </div>
 </template>
 
@@ -16,12 +21,14 @@ import CardComponent from './components/CardComponent.vue';
 import NavBar from './components/NavBar.vue'
 import axios from 'axios'
 
+// includes app, pulling together the cardcomponent and navbar
 export default {
   name: 'App',
   components: {
     NavBar,
     CardComponent
   },
+  // retrieving movie data
   data(){
     return{
       tvshows:[]
@@ -30,10 +37,14 @@ export default {
   mounted(){
     axios
     // API Call for now playing movies
-    .get("https://api.themoviedb.org/3/movie/now_playing?api_key=70ef7c62eee1244489c96681175a2a0f&language=en-US&page=1")
+    // My API Key  61e97aeda24257e41c374d7596d49757
+    .get("https://api.themoviedb.org/3/movie/now_playing?api_key=61e97aeda24257e41c374d7596d49757&language=en-US&page=1")
+    // array response
     .then((response) => {
-      // determines how many movie cards there are, currently there are four
-      this.tvshows = response.data.results.slice(0,4);
+      // determines how many movie cards there are, currently there are three
+      this.tvshows = response.data.results.slice(0,3);
+      // print to the console the array information being grabbed
+      console.log(this.tvshows)
     })
   }
 }
@@ -41,11 +52,12 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  font-size:15px;
   color: #2c3e50;
   margin-top: 0px;
+  background-color:slategray;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 </style>

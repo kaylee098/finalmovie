@@ -1,7 +1,13 @@
+<!-- Kaylee Martin -->
+<!-- NavBar Template -->
+
+<!-- bootstrap navbar for landing page -->
 <template>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-light" style="height:12rem;">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <!-- title for the site -->
+        <a class="navbar-brand">The Movie Emporium</a>
+        <!-- toggle button -->
         <button
           class="navbar-toggler"
           type="button"
@@ -14,17 +20,12 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link disabled">Disabled</a>
-          </div>
         </div>
       </div>
     </nav>
   </template>
   
+  <!-- navbar script  makes sure navbar shows up on the page -->
   <script>
   export default {
     name: "NavBar",
