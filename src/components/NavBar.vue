@@ -32,11 +32,19 @@
   };
   </script>
 
+<!-- navbar styles for the moving cinema tape and title of page -->
 <style>
 .navbar{
   background-image:url("cinema-tape.jpg");
   background-position:center;
   background-repeat:repeat;
   height:12rem;
+  opacity:85%;
+}
+.navbar-brand{
+  font-size:9.25rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  align-self:center;
+  color: rgb(21, 23, 51);
 }
 </style>
