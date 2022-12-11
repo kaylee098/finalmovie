@@ -3,7 +3,7 @@
 
 <!-- bootstrap navbar for landing page -->
 <template>
-    <nav class="navbar navbar-expand-lg " style="height:12rem;">
+    <nav class="navbar navbar-expand-lg " >
       <div class="container-fluid">
         <!-- title for the site -->
         <a class="navbar-brand">The Movie Emporium</a>
@@ -32,3 +32,11 @@
   };
   </script>
 
+<style>
+.navbar{
+  background-image:url("cinema-tape.jpg");
+  background-position:center;
+  background-repeat:repeat;
+  height:12rem;
+}
+</style>

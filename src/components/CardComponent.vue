@@ -2,7 +2,7 @@
 <!-- CardComponent Template Page -->
 <!-- the template that will be used to create the movie cards -->
 <template>
-    <div class="card" style="width: 28rem; color:black; background-color:lightgrey;">
+    <div class="card" >
         <img :src=imgPath class="card-img-top" alt="..." style="height:24rem; border:2px solid black;">
         <div class="card-body">
             <!-- information brought in by app.vue vue instance -->
@@ -29,3 +29,14 @@
     })
 
 </script>
+
+
+<style>
+.card{
+    width:26rem;
+    color:black;
+    background-color:lightgoldenrodyellow;
+
+}
+
+</style>
