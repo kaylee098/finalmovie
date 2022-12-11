@@ -3,7 +3,7 @@
 
 <!-- bootstrap navbar for landing page -->
 <template>
-    <nav class="navbar navbar-expand-lg bg-light" style="height:12rem;">
+    <nav class="navbar navbar-expand-lg " style="height:12rem;">
       <div class="container-fluid">
         <!-- title for the site -->
         <a class="navbar-brand">The Movie Emporium</a>
@@ -31,3 +31,4 @@
     name: "NavBar",
   };
   </script>
+

@@ -57,6 +57,7 @@ export default {
   font-size:15px;
   color: #2c3e50;
   margin-top: 0px;
+  padding-left:15px;
   background-color:slategray;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
