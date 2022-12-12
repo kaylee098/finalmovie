@@ -1,3 +1,8 @@
+<!-- Kaylee Martin
+     TMDB Final Project
+     ShoppingCart Template -->
+
+<!-- overall template for the shopping cart, when cart button is clicked at the top of the page should display movie ticket price and subtotal -->
 <template>
 <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">

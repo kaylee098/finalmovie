@@ -1,4 +1,5 @@
 <!-- Kaylee Martin -->
+<!-- TMDB Final Project -->
 <!-- NavBar Template -->
 
 <!-- bootstrap navbar for landing page -->

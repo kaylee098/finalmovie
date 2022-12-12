@@ -1,5 +1,5 @@
 <!-- Kaylee Martin -->
-<!-- CardComponent Template Page -->
+<!-- MovieCard Template Page -->
 <!-- the template that will be used to create the movie cards -->
 <template>
     <div class="card" >
