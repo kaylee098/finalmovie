@@ -12,6 +12,7 @@
         <MovieCard class="col"  v-for="show in tvshows" v-bind:key="show.id" :movie="show"></MovieCard>
     </div>
     <ShoppingCart></ShoppingCart>
+    <MovieFooter></MovieFooter>
   </div>
 </template>
 
@@ -21,6 +22,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import MovieCard from './components/MovieCard.vue';
 import NavBar from './components/NavBar.vue'
 import ShoppingCart from './components/ShoppingCart.vue'
+import MovieFooter from './components/MovieFooter.vue'
 import axios from 'axios'
 
 // includes app, pulling together the cardcomponent and navbar
@@ -29,7 +31,8 @@ export default {
   components: {
     NavBar,
     MovieCard,
-    ShoppingCart
+    ShoppingCart,
+    MovieFooter
   },
   // retrieving movie data
   data(){
