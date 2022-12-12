@@ -19,8 +19,14 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- navbar collapse -->
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         </div>
+        <!-- shopping cart button that will display whats in the cart and the option to clear the cart -->
+        <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
+    </div>
       </div>
     </nav>
   </template>
@@ -42,7 +48,7 @@
   opacity:85%;
 }
 .navbar-brand{
-  font-size:9.25rem;
+  font-size:6rem;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   align-self:center;
   color: rgb(21, 23, 51);

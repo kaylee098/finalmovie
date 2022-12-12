@@ -10,14 +10,17 @@
             <h5 class="card-title">{{movie.title}}</h5>
             <!-- overall overview of the movie -->
             <p class="card-text">{{movie.overview}}</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <!-- price of movie ticket -->
+            <p class="card-text">Price: $12.55</p>
         </div>
+           <!-- buy ticket button that should add the movie title and price to the shopping cart once clicked -->
+         <a href="#" data-name="movie.title" data-price="12.55" class="add-to-cart btn btn-primary">Buy Ticket</a>
     </div>
 </template>
 
 <script>
     export default({
-        name: 'CardComponent',
+        name: 'MovieCard',
         props:['movie'],
         data(){
             return {

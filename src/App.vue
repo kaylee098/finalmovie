@@ -9,16 +9,18 @@
     <NavBar></NavBar>
     <!-- card component setup -->
     <div class="row row-cols-1 row-cols-md-2 g-4">
-        <CardComponent class="col"  v-for="show in tvshows" v-bind:key="show.id" :movie="show"></CardComponent>
+        <MovieCard class="col"  v-for="show in tvshows" v-bind:key="show.id" :movie="show"></MovieCard>
     </div>
+    <ShoppingCart></ShoppingCart>
   </div>
 </template>
 
 <script>
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import CardComponent from './components/CardComponent.vue';
+import MovieCard from './components/MovieCard.vue';
 import NavBar from './components/NavBar.vue'
+import ShoppingCart from './components/ShoppingCart.vue'
 import axios from 'axios'
 
 // includes app, pulling together the cardcomponent and navbar
@@ -26,12 +28,13 @@ export default {
   name: 'App',
   components: {
     NavBar,
-    CardComponent
+    MovieCard,
+    ShoppingCart
   },
   // retrieving movie data
   data(){
     return{
-      tvshows:[]
+      tvshows:[],
     }
   },
   mounted(){
